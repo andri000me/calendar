@@ -5,14 +5,18 @@ if(isset($_POST["username"])){
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$row = mysqli_query($conn, "select * from 'user' where 'username' = '$username' ['username'] and 'pass' = '$password' ['password']");
-
-}
+$row = mysqli_query($conn, "select * from 'user' where 'username' = '$username' ['username'] and 'pass' = '$password' ['password']");}
 
 if(mysqli_num_rows($row) < 1){
-    echo "PASSWORD / USERNAME SALAH";}else{ esession_start();
-        $_SESSION["status"] = "login";
-    }
+    echo "PASSWORD / USERNAME SALAH";
+}else{ 
+        session_start();
+        $_SESSION["nama_lengkap"] = mysqli_fetch_array(mysqli_query($conn, "select * from 'user' where username = '$username'))["nama_lengkap"];
+    
+
+
+}
+    
 
 ?>
 
