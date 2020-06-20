@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (isset($_SESSION)) {
+	if ($_SESSION["status"] != "login") {
+		echo "<script>window.location = './destroy.php'</script>";
+		die;
+	}
+} else {
+	echo "<script>window.location = './destroy.php'</script>";
+	die;
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +37,15 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
 				<button class="btn btn-primary my-2 my-sm-0" type="submit">Cari Pelatihan</button>
 			</form>
-			<a href="login.html" class="btn btn-danger login">Login</a>
+			<!-- Example single danger button -->
+			<div class="btn-group">
+				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Halo <?= $_SESSION["nama_lengkap"] ?>
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="./destroy.php">Logout!</a>
+				</div>
+			</div>
 		</div>
 	</nav>
 	<!-- <nav class="navbar fixed-top navbar-light bg-light"> 

@@ -11,7 +11,9 @@ if (isset($_POST["username"])) {
     } else {
         $get_array = mysqli_fetch_array($row);
         $_SESSION["nama_lengkap"] = $get_array["nama_lengkap"];
-        echo "Sukses Login";
+        $_SESSION["username"] = $get_array["username"];
+        $_SESSION["status"] = "login";
+        echo "<script>window.location = './dashboard.php'</script>";
     }
 }
 ?>

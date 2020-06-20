@@ -26,7 +26,7 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
 				<button class="btn btn-primary my-2 my-sm-0" type="submit">Cari Pelatihan</button>
 			</form>
-			<a href="login.html" class="btn btn-danger login">Login</a>
+			<a href="login.php" class="btn btn-danger login">Login</a>
 		</div>
 	</nav>
 	<!-- <nav class="navbar fixed-top navbar-light bg-light"> 
@@ -61,7 +61,6 @@
 						<th>Sifat Pelatihan</th>
 						<th>Keterangan</th>
 						<th>Status</th>
-						<th>Aksi</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -77,10 +76,6 @@
 						<td>Residensial</td>
 						<td>Undangan Sudah Dikirim</td>
 						<td class="bg-warning">Sedang Berjalan</td>
-						<td>
-							<button class="btn btn-warning" data-target=".modalhse" data-toggle="modal">Edit</button>
-							<button class="btn btn-danger">Hapus</button>
-						</td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -94,10 +89,6 @@
 						<td>Residensial</td>
 						<td>Undangan Sudah Dikirim</td>
 						<td class="bg-warning">Sedang Berjalan</td>
-						<td>
-							<button class="btn btn-warning">Edit</button>
-							<button class="btn btn-danger">Hapus</button>
-						</td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -111,10 +102,6 @@
 						<td>Residensial</td>
 						<td>Undangan Sudah Dikirim</td>
 						<td class="bg-success">Sudah Selesai</td>
-						<td>
-							<button class="btn btn-warning">Edit</button>
-							<button class="btn btn-danger">Hapus</button>
-						</td>
 					</tr>
 					<tr>
 						<td>1</td>
@@ -128,95 +115,10 @@
 						<td>Residensial</td>
 						<td>Undangan Sudah Dikirim</td>
 						<td class="bg-danger">Akan Datang</td>
-						<td>
-							<button class="btn btn-warning">Edit</button>
-							<button class="btn btn-danger">Hapus</button>
-						</td>
 					</tr>
 
 				</tbody>
 			</table>
-
-			<!-- Modal -->
-			<div class="modal fade modalhse" tabindex="-1" role="dialog" aria-hidden="true">
-				<div class="modal-dialog modal-xl">
-
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5>Masukan Data Kalender Pelatihan</h5>
-						</div>
-						<div class="modal-body">
-							<form method="post">
-								<div class="form-group">
-									<label>Nama Pelatihan</label>
-									<input type="text" class="form-control" placeholder="Masukan Nama Pelatihan" name="nama_pelatihan">
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col">
-											<label>Tanggal Mulai</label>
-											<input type="date" class="form-control" placeholder="First name">
-										</div>
-										<div class="col">
-											<label>Tanggal Selesai</label>
-											<input type="date" class="form-control" placeholder="Last name">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col">
-											<label>Waktu Pelatihan</label>
-											<input type="text" class="form-control" placeholder="Masukan Waktu">
-										</div>
-										<div class="col">
-											<label>Jumlah Peserta</label>
-											<input type="number" class="form-control" placeholder="Masukan Jumlah Peserta">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col">
-											<label>Lokasi Pelatihan</label>
-											<input type="text" class="form-control" placeholder="Masukan Lokasi Pelatihan">
-										</div>
-										<div class="col">
-											<label>Jenis Program</label>
-											<input type="text" class="form-control" placeholder="Masukan Jenis Program">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col">
-											<label>Sifat Pelatihan</label>
-											<select class="form-control">
-												<option>Residensial</option>
-												<option>Non Residensial</option>
-												<option>In House</option>
-											</select>
-										</div>
-										<div class="col">
-											<label>Keterangan</label>
-											<input type="text" class="form-control" placeholder="Masukan Keterangan">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label>Status</label>
-									<select class="form-control">
-										<option>Akan Datang</option>
-										<option>Sedang Berjalan</option>
-										<option>Sudah Selesai</option>
-									</select>
-								</div>
-							</form>
-							<button type="button" class="btn btn-primary ml-auto">Simpan</button>
-						</div>
-					</div>
-				</div>
-			</div>
 
 
 		</div>
