@@ -1,3 +1,5 @@
 <?php
-session_start();
-$conn = mysqli_connect('localhost' , 'root', '', 'eventhse');
+$conn = mysqli_connect('localhost', 'root', '', 'eventhse');
+if (mysqli_errno($conn)) {
+    echo "Galat Sambungan Database";
+}
