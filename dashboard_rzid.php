@@ -34,28 +34,18 @@ if (isset($_SESSION)) {
 			<ul class="navbar-nav mr-auto">
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-<<<<<<< HEAD
-				<input class="form-control mr-sm-2" type="search" placeholder="Cari Pelatihan ... " aria-label="Search">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+				<button class="btn btn-primary my-2 my-sm-0" type="submit">Cari Pelatihan</button>
 			</form>
-			<div class="btn-group">
-				<button class="btn btn-primary">+ Tambah Event</button>
-			</div>
 			<!-- Example single danger button -->
-			<div class="btn-group" style="margin-left: 5px;">
+			<div class="btn-group">
 				<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Halo <?= $_SESSION["nama_lengkap"] ?>
 				</button>
 				<div class="dropdown-menu">
 					<a class="dropdown-item" href="./destroy.php">Logout!</a>
 				</div>
-				
 			</div>
-=======
-				<input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-				<button class="btn btn-primary my-2 my-sm-0" type="submit">Cari Pelatihan</button>
-			</form>
-			<a href="login.html" class="btn btn-danger login">Login</a>
->>>>>>> 59feff196d822f9981a5f67884d573e0bdd55096
 		</div>
 	</nav>
 	<!-- <nav class="navbar fixed-top navbar-light bg-light"> 
