@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header("index.html");
+echo "<script>window.location = './index.php'</script>";
